@@ -1,0 +1,53 @@
+#################################################################
+# General options
+#################################################################
+ramdisk=rootfs.cpio.gz
+kernel=zImage
+fix_addr 0x44500000
+kernel_addr=0x46000000
+ramdisk_addr=0x47000000
+dtb_addr=0x48000000
+
+debug_port=ttyS0,115200
+fsck.repair=yes
+
+# 0 = /dev/fb0, First framebuffer
+# 1 = /dev/fb1, Second framebuffer
+# README: linux/Documentation/fb/fbcon.txt
+fbcon=map:
+
+
+
+
+
+#################################################################
+# Overlay options
+# README: /overlays/README.txt
+#################################################################
+
+#uart0/enable=no
+#uart1/enable=no
+#uart2/enable=no
+#uart3/enable=no
+
+#i2c0/enable=no
+#i2c1/enable=no
+#i2c2/enable=no
+
+#spi0/enable=no
+
+#pwm0/enable=no
+
+#ir/enable=no
+
+#tft28/enable=no
+#tft28/speed=50000000
+#tft28/rotate=90
+#tft28/fps=33
+#tft28/debug=0x0
+
+#tft13/enable=no
+#tft13/speed=50000000
+#tft13/rotate=0
+#tft13/fps=0x0
+#tft13/debug=0x0
